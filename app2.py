@@ -31,9 +31,9 @@ if st.button('Compare'):
                 if status == 'unchanged':
                     formatted_result += f"{word} "
                 elif status == 'added':
-                    formatted_result += f"<span style='color: green; font-weight: bold;font-size: 1.2em; '>{word}</span> "
+                    formatted_result += f"**{word}** "  # Bold for added text
                 elif status == 'deleted':
-                    formatted_result += f"<span style='color: red; text-decoration: line-through; font-size: 1.2em; '>{word}</span> "
+                    formatted_result += f"~~{word}~~ "  # Strikethrough for deleted text
 
             st.markdown(formatted_result, unsafe_allow_html=True)
         else:
