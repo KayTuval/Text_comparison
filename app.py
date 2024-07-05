@@ -33,7 +33,7 @@ if st.button('Compare'):
                 elif status == 'added':
                     formatted_result += f"<span style='color: green; font-weight: bold;font-size: 1.5em; '>{word}</span> "
                 elif status == 'deleted':
-                    formatted_result += f"<span style='color: red; text-decoration: line-through; font-size: 1.5em; '>{word}</span> "
+                    formatted_result += f"<span style='color: red; text-decoration: line-through; font-size: 1.3em; '>{word}</span> "
 
             st.markdown(formatted_result, unsafe_allow_html=True)
         else:
